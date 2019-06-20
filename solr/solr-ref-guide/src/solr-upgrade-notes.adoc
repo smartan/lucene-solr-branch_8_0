@@ -1,0 +1,44 @@
+= Solr Upgrade Notes
+:page-children: major-changes-in-solr-8, major-changes-in-solr-7, major-changes-from-solr-5-to-solr-6
+:page-toclevels: 3
+// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements.  See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership.  The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License.  You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, either express or implied.  See the License for the
+// specific language governing permissions and limitations
+// under the License.
+
+The following notes describe changes to Solr in recent releases that you should be aware of before upgrading.
+
+These notes highlight the biggest changes that may impact the largest number of implementations. It is not a comprehensive list of all changes to Solr in any release.
+
+When planning your Solr upgrade, consider the customizations you have made to your system and review the {solr-javadocs}/changes/Changes.html[`CHANGES.txt`] file found in your Solr package. That file includes all the changes and updates that may effect your existing implementation.
+
+Detailed steps for upgrading a Solr cluster are in the section <<upgrading-a-solr-cluster.adoc#upgrading-a-solr-cluster,Upgrading a Solr Cluster>>.
+
+== Upgrading to 8.0 from 7.x Releases
+
+The upgrade from 7.x to Solr 8.0 introduces several major changes that you should be aware of before upgrading.
+These changes are described in the section <<major-changes-in-solr-8.adoc#major-changes-in-solr-8,Major Changes in Solr 8>>.
+It's strongly recommended that you do a thorough review of that section before starting your upgrade.
+
+[NOTE]
+If you are running in SolrCloud mode, you must be on Solr 7.3 or higher in order to upgrade to 8.0.
+
+== Upgrading to 8.0 from pre-7.x Versions
+
+Users upgrading from versions of Solr prior to 7.x are strongly encouraged to consult {solr-javadocs}/changes/Changes.html[`CHANGES.txt`] for the details of _all_ changes since the version they are upgrading from.
+
+The upgrade from Solr 6.x to Solr 7.0 introduced several *major* changes that you should be aware of before upgrading. Please do a thorough review of the section <<major-changes-in-solr-7.adoc#major-changes-in-solr-7,Major Changes in Solr 7>> before starting your upgrade.
+
+A summary of the significant changes between Solr 5.x and Solr 6.0 is in the section <<major-changes-from-solr-5-to-solr-6.adoc#major-changes-from-solr-5-to-solr-6,Major Changes from Solr 5 to Solr 6>>.
